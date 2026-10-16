@@ -1,4 +1,6 @@
 import { View, Text, TextInput, StyleSheet } from "react-native";
+import colors from "../theme/colors";
+import Button from "./Button";
 
 const INPUT_BG = "#F5F5F5";
 const INPUT_BORDER = "#E8E8E8";

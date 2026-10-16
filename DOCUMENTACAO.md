@@ -9,3 +9,26 @@ src
  -- App
  -- assets
  -- App.js
+
+ 🗂️app
+- 📂components
+  -- 📕LabeledInput.jsx
+  -- 📕Button.jsx
+  -- 📕ScreenContainer.jsx
+  -- 📕Logo.jsx
+- 📂screens
+  -- 📗LoginScreen.jsx
+  -- 📘RegisterScreen1.jsx
+  -- 📘RegisterScreen2.jsx
+  -- 📘RegisterScreen3.jsx
+- 📂routes
+  -- 📙index.jsx
+  -- 📙StackRoutes.jsx
+- 📂theme
+  -- 📓color.js
+ 📂utils
+  -- 📒masks.js
+ 📂services
+ 📂assets
+  -- 📂images
+    -- 🩻logo.png
