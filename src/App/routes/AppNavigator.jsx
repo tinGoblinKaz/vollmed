@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 // NavigationContainer: contexto global de navegação. Mantém o histórico de telas (a "pilha").
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -21,10 +20,10 @@ export default function AppNavigator() {
           animation: 'slide_from_right', // Animação: desliza da direita para a esquerda
         }}
       >
-        <Stack.Screen name="Login"          component={LoginScreen} />
-        <Stack.Screen name="CadastroPasso1" component={RegisterScreen1} />
-        <Stack.Screen name="CadastroPasso2" component={RegisterScreen2} />
-        <Stack.Screen name="CadastroPasso3" component={RegisterScreen3} />
+        <Stack.Screen name="login"          component={LoginScreen} />
+        <Stack.Screen name="registerscreen1" component={RegisterScreen1} />
+        <Stack.Screen name="registerscreen2" component={RegisterScreen2} />
+        <Stack.Screen name="registerscreen3" component={RegisterScreen3} />
       </Stack.Navigator>
     </NavigationContainer>
   );

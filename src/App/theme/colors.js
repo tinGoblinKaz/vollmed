@@ -9,6 +9,7 @@ const colors = {
   placeholder: "#9CA3AF", // Cor do texto de placeholder (dica dentro do campo vazio).
   white: "#FFFFFF", // Branco — texto em botões e elementos no fundo escuro.
   disabled: "#A3A3A3", // Cinza — fundo do botão "Voltar" (variante secundária).
+  background:"#FFFFFF",
   backgroundDark: "#000000", // Preto — fundo da tela 3 (seleção de planos).
   error: "#DC2626", // Vermelho — bordas e mensagens de erro.
 };

@@ -1,23 +1,30 @@
 // Componente de tela
-import { View, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
 import Button from "../components/Button"
 import LabeledInput from "../components/LabeledInput";
-
+import ScreenContainer from "../components/ScreenContainer";
+import Logo from "../components/Logo";
+//import { useNavigation } from "@react-navigation/native";
+import { useNavigation } from "expo-router";
 
 export default function LoginScreen() {
+  const navigation = useNavigation();
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Faça login na sua conta</Text>
-      <LabeledInput 
-        label="Email:"
-        placeholder= "Insira seu endereço de email:"
-        />
-      <LabeledInput 
-        label="Senha:"
-        placeholder="Insira sua Senha"
-        />
-      <Button textButton="Entrar"/>
-    </View>
+    <ScreenContainer>
+      <Logo/>
+      
+        <Text style={styles.title}>Faça login na sua conta</Text>
+        <LabeledInput 
+          label="Email:"
+          placeholder= "Insira seu endereço de email:"
+          />
+        <LabeledInput 
+          label="Senha:"
+          placeholder="Insira sua Senha"
+          />
+        <Button textButton="Entrar" onPress={()=>navigation.navigate("registerscreen1")}/>
+      
+    </ScreenContainer>
   );
 }
 
